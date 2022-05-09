@@ -3,8 +3,7 @@ body {
 }
 
 nav {
-	background-color:#DE3939;
-  
+	background-color:#DE3939; 
 }
 
 nav ul {
@@ -29,7 +28,7 @@ nav a {
 
 .info {
 	display:flex;
-  flex-wrap:nowrap;
+	flex-wrap:nowrap;
 	padding:1rem;
 	border:1px solid #000;
 }
@@ -48,22 +47,22 @@ nav a {
 }
 
 .separador_container{
-  min-width:10rem;
-  padding:0px;
-  display:flex;
+	min-width:10rem;
+	padding:0px;
+	display:flex;
 }
 
 .separador {
 	width:1rem;
 	height:10rem;
 	background-color:#DE3939;
-  margin:0 auto;
+	margin:0 auto;
 }
 
 .info_texto {
-  min-width:20rem;
-  padding:0rem;
-  display:flex;
-  flex-direction:column;
+	min-width:20rem;
+	padding:0rem;
+	display:flex;
+	flex-direction:column;
 }
 
