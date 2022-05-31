@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Contador</title>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Este é o meu primeiro projeto Javascript.</p>
+    <div id="counter">
+        <button id="subtrair">-</button>
+        <span id="currentNumber">0</span>
+        <button id="adicionar">+</button>
+		<button id="limpar">Limpar</button>
+		
+    </div>
+    <script>
+		let currentNumber = 0
+		const currentNumberSpan = document.getElementById('currentNumber')
+		const contador = document.getElementById('counter')
+		
+		const acoes = {
+			adicionar: function () {
+				currentNumber++
+				currentNumberSpan.innerHTML = currentNumber
+			},
+			subtrair: function () {
+				currentNumber--
+				currentNumberSpan.innerHTML = currentNumber
+			},
+			limpar: function (){
+				currentNumber = 0
+				currentNumberSpan.innerHTML = currentNumber
+			}
+		}
+		
+		const captura = function (event) {
+			const evento = event.target.id
+			
+			if (acoes[evento]){
+				acoes[evento]()
+			}
+		}
+		
+		contador.addEventListener('click',captura)
+	
+	</script>
+</body>
+</html>
