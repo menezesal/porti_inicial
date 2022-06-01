@@ -63,3 +63,15 @@ nav a {
 	text-align: left;
 }
 
+.content {
+	display: flex;
+	justify-content: space-around;
+}
+.content-center {
+	background-color: #ffa3a0;
+	width: 50rem;
+	min-height: 50rem;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
